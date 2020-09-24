@@ -1,0 +1,113 @@
+.main {
+  max-width: 115rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.top {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ margin-bottom: 7rem;
+}
+
+.intro {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center;
+}
+
+.review {
+  background-color: $light-gray-magenta;
+  width: 42rem;
+  display: flex;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+
+  &__stars {
+    margin-right: 2rem;
+  }
+
+  &__star {
+    margin-right: .5rem;
+  }
+
+  &-1 {
+    align-self: flex-start;
+  }
+  
+  &-2 {
+    align-self: center;
+  }
+
+  &-3 {
+    align-self: flex-end;
+  }
+}
+
+.review:last-child {
+  margin-bottom: 0;
+}
+
+
+.testimonial {
+  width: 100%;
+  display: flex;
+  min-height: 30rem;
+
+  &__1 {
+    align-self: flex-start;
+  }
+
+  &__2 {
+    align-self: center;
+  }
+
+  &__3 {
+    align-self: flex-end;
+  }
+
+  &__container {
+    background-color: $dark-magenta;
+    border-radius: 1rem;
+    padding: 4rem 3rem 4rem 3rem;
+    margin-right: 3rem;
+  }
+
+  &__container:last-child {
+    margin-right: 0;
+  }
+
+  &__user {
+    display: flex;
+  }
+
+  &__user-photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 2.5rem 3rem 0;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+}

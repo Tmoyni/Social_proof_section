@@ -1,0 +1,167 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 40% 50%, 75% 75%;
+  min-height: 100vh;
+  padding: 30px; }
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #502050;
+  margin-bottom: 1.2rem;
+  line-height: 4.8rem;
+  letter-spacing: -.05em; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #937b92;
+  line-height: 2.5rem;
+  letter-spacing: -.05em; }
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  color: #f7f2f7;
+  margin-top: .4rem; }
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ee68a4; }
+
+.review__text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #502050; }
+
+p {
+  font-size: 1.3rem;
+  color: #f7f2f7;
+  line-height: 2.2rem;
+  font-weight: 400; }
+
+.main {
+  max-width: 115rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 7rem; }
+
+.intro {
+  width: 40%;
+  margin-right: 40px; }
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center; }
+
+.review {
+  background-color: #f7f2f7;
+  width: 42rem;
+  display: flex;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem; }
+  .review__stars {
+    margin-right: 2rem; }
+  .review__star {
+    margin-right: .5rem; }
+  .review-1 {
+    align-self: flex-start; }
+  .review-2 {
+    align-self: center; }
+  .review-3 {
+    align-self: flex-end; }
+
+.review:last-child {
+  margin-bottom: 0; }
+
+.testimonial {
+  width: 100%;
+  display: flex;
+  min-height: 30rem; }
+  .testimonial__1 {
+    align-self: flex-start; }
+  .testimonial__2 {
+    align-self: center; }
+  .testimonial__3 {
+    align-self: flex-end; }
+  .testimonial__container {
+    background-color: #502050;
+    border-radius: 1rem;
+    padding: 4rem 3rem 4rem 3rem;
+    margin-right: 3rem; }
+  .testimonial__container:last-child {
+    margin-right: 0; }
+  .testimonial__user {
+    display: flex; }
+  .testimonial__user-photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 2.5rem 3rem 0; }
+    .testimonial__user-photo-img {
+      width: 100%;
+      height: auto; }
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center; }
+
+.attribution a {
+  color: #502050; }
