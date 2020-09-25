@@ -24,11 +24,10 @@ body {
     background-size: 40% 50%, 75% 75%;
 
     min-height: 100vh; 
-    padding: 30px;
+    padding: 8.2rem 2.5rem 2rem 2.5rem;
+
 
     @include respond(phone) {
-        padding: 8.2rem 2.5rem 2rem 2.5rem;
         background-size: 100% 15%, 100% 30%;
-
     }
 }
