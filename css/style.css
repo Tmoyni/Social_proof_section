@@ -38,6 +38,10 @@ body {
   background-size: 40% 50%, 75% 75%;
   min-height: 100vh;
   padding: 30px; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 8.2rem 2.5rem 2rem 2.5rem;
+      background-size: 100% 15%, 100% 30%; } }
 
 body {
   font-family: 'Spartan', sans-serif;
@@ -49,7 +53,13 @@ h1 {
   color: #502050;
   margin-bottom: 1.2rem;
   line-height: 4.8rem;
-  letter-spacing: -.05em; }
+  letter-spacing: -.04em; }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      text-align: center;
+      margin-bottom: 2.2rem; } }
 
 h2 {
   font-size: 1.5rem;
@@ -57,6 +67,12 @@ h2 {
   color: #937b92;
   line-height: 2.5rem;
   letter-spacing: -.05em; }
+  @media only screen and (max-width: 37.5em) {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+      letter-spacing: -.04em; } }
 
 h3 {
   font-size: 1.3rem;
@@ -74,12 +90,19 @@ h4 {
   font-size: 1.4rem;
   font-weight: 700;
   color: #502050; }
+  @media only screen and (max-width: 37.5em) {
+    .review__text {
+      font-size: 1.3rem;
+      font-weight: 700; } }
 
 p {
   font-size: 1.3rem;
   color: #f7f2f7;
   line-height: 2.2rem;
   font-weight: 400; }
+  @media only screen and (max-width: 37.5em) {
+    p {
+      letter-spacing: -.02em; } }
 
 .main {
   max-width: 115rem;
@@ -89,22 +112,37 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      max-width: 100%;
+      padding: 0; } }
 
 .top {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .top {
+      flex-direction: column;
+      margin-bottom: 5rem; } }
 
 .intro {
   width: 40%;
   margin-right: 40px; }
+  @media only screen and (max-width: 37.5em) {
+    .intro {
+      width: 100%;
+      margin-right: 0; } }
 
 .reviews {
   display: flex;
   flex-direction: column;
   width: 50rem;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .reviews {
+      width: 100%; } }
 
 .review {
   background-color: #f7f2f7;
@@ -113,10 +151,21 @@ p {
   padding: 1.5rem 3rem 1.5rem 3rem;
   border-radius: .5rem;
   margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      width: 100%;
+      flex-direction: column;
+      align-items: center; } }
   .review__stars {
     margin-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .review__stars {
+        margin-right: 0;
+        margin-bottom: 1.2rem; } }
   .review__star {
     margin-right: .5rem; }
+  .review__star:last-child {
+    margin-right: 0; }
   .review-1 {
     align-self: flex-start; }
   .review-2 {
@@ -131,6 +180,9 @@ p {
   width: 100%;
   display: flex;
   min-height: 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .testimonial {
+      flex-direction: column; } }
   .testimonial__1 {
     align-self: flex-start; }
   .testimonial__2 {
@@ -140,8 +192,12 @@ p {
   .testimonial__container {
     background-color: #502050;
     border-radius: 1rem;
-    padding: 4rem 3rem 4rem 3rem;
+    padding: 4rem 3.2rem 3rem 3.2rem;
     margin-right: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .testimonial__container {
+        margin-right: 0;
+        margin-bottom: 1.5rem; } }
   .testimonial__container:last-child {
     margin-right: 0; }
   .testimonial__user {
