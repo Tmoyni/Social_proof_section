@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
+
+  @include respond(phone) {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 .top {
@@ -13,12 +18,23 @@
  justify-content: space-between;
  width: 100%;
  margin-bottom: 7rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+  }
 }
 
 
 .intro {
   width: 40%;
   margin-right: 40px;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .reviews {
@@ -26,6 +42,10 @@
   flex-direction: column;
   width: 50rem;
   justify-content: center;
+  
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .review {
@@ -36,12 +56,27 @@
   border-radius: .5rem;
   margin-bottom: 1.5rem;
 
+  @include respond(phone) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__stars {
     margin-right: 2rem;
+
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__star {
     margin-right: .5rem;
+  }
+
+  &__star:last-child {
+    margin-right: 0;
   }
 
   &-1 {
@@ -67,6 +102,10 @@
   display: flex;
   min-height: 30rem;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__1 {
     align-self: flex-start;
   }
@@ -82,8 +121,13 @@
   &__container {
     background-color: $dark-magenta;
     border-radius: 1rem;
-    padding: 4rem 3rem 4rem 3rem;
+    padding: 4rem 3.2rem 3rem 3.2rem;
     margin-right: 3rem;
+    
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__container:last-child {
